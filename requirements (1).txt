@@ -132,3 +132,22 @@ wcwidth==0.2.6
 webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.6.1
+
+
+You have spent the previous homework assignments becoming familiar with Fusion 360. Now we will apply what you know to an example TOTEM to prepare you for producing the CNC code for both NORTH and SOUTH ends of your TOTEM.
+You will need to download the zip folder Assignment4.zip from canvas, unzip the contents, and upload them to your Fusion 360 cloud. The zip folder should contain the following:
+1. The sample TOTEM model: Assignment4Totem.SLDPRT
+2. The list of provided tools already available to you in the CNC mill: EME-50 Tools.tools
+3. The post processor for the CNC mill: siemens-840d 08_31_17.cps
+IMPORTANT: Follow the instructions for uploading the tools list and the post processor which can be found in the CAM Setup and Parameters Guide pdf.
+Utilizing what you have learned from the Fusion 360 instructional videos and incorporating settings noted in the CAM Setup and Parameters Guide, generate appropriate toolpaths to create program code for both the NORTH and SOUTH ends of the provided sample totem. See provided drawing of the Solidworks part to identify south from north ends.
+You should create TWO different Setups, one for NORTH and one for SOUTH. Input the following information in the “Post Process” tab for each setup
+• The NORTH Setup should have the following:
+o The NORTH Program Number should be “X0## NORTH 4” such that X = your section number (i.e. for A01 X=1, for A02 X=2, for A03 X=3, and for A04 X=4) and ## = your assigned box number.
+o The Program Comment should be “YourLastName – CAM 4 NORTH”
+o WCS Offset should be “2”
+• The SOUTH Setup should have the following
+o The SOUTH Program Number should be “SOUTH 4 X0##” such that X = your section number (i.e. for A01 X=1, for A02 X=2, for A03 X=3, and for A04 X=4) and ## = your assigned box number.
+o The Program Comment should be “YourLastName – CAM 4 SOUTH”
+o WCS Offset should be “2”
+• North versus south designations do matter, you will lose points for labeling the north and south ends wrong. You will lose points for having only one work coordinate system.
